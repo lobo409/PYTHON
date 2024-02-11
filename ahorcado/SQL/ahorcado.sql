@@ -62,7 +62,7 @@ DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `Nombre` varchar(50) NOT NULL,
-  `Contraseña` varchar(50) NOT NULL,
+  `Contraseña` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `Nombre` (`Nombre`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
